@@ -1,4 +1,6 @@
-// This whole bunch of series of exercicies are ones that I made challenged by Angela Yu in the Udemy's course for Full Strack.
+// This whole bunch of series of exercicies are ones that I made challenged by Angela Yu in the Udemy's course for Full Stack.
+
+// These exercises are organized in increasing complexity as you scroll. 
 
 // Ex -  Tweet Count
 var tweet = prompt("Your Tweet");
@@ -101,3 +103,24 @@ function guestCheck (yourName){
     }
 }
 guestCheck (yourName);
+
+// Exercício 15 - Fizz Buzz 
+let fizzNumber = [];
+
+function fizzBuzz () {
+for ( i=1; i<100; i++) {
+if (i%3 === 0 && i%5===0) {
+fizzNumber.push("FizzBuzz");
+}
+else if(i%3 === 0) {
+fizzNumber.push("Fizz");
+}
+else if (i%5 === 0) {
+fizzNumber.push("Buzz");
+}
+    else {
+        fizzNumber.push(i);
+    }
+}
+return fizzNumber;
+}
